@@ -2,53 +2,108 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 16px;
   font-family: "Karla", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
 }
 body {
   padding: 0;
   margin: 0;
   background-color: hsl(204, 43%, 93%);
+  font-size: 1.6rem;
 }
 #body {
-  min-width: 310px;
-  width: 310px;
-  margin: auto;
+  min-width: 31rem;
+  width: 31rem;
+  margin: 7.2rem auto;
 }
 .header {
   width: 100%;
-  padding: 32px 24px 40px 24px;
-  border-radius: 5px 5px 0 0;
+  padding: 2.8rem 2.4rem 3.4rem 2.4rem;
+  border-radius: 0.5rem 0.5rem 0 0;
   background-color: white;
-}
-h1 {
-  margin: 0;
-  color: hsl(179, 62%, 43%);
-  font-size: 0.875rem;
-}
-h2 {
-  margin: 0;
-  color: hsl(71, 73%, 54%);
-  font-size: 0.6875rem;
 }
 p {
   margin: 0;
-  font-size: 0.625rem;
+}
+.header > h1 {
+  padding-bottom: 2.2rem;
+  margin: 0;
+  color: hsl(179, 62%, 43%);
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.header > h3 {
+  padding-bottom: 1.4rem;
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: hsl(71, 73%, 54%);
 }
 .header > p {
+  font-size: 1.3rem;
+  line-height: 2.7rem;
   color: hsl(218, 22%, 67%);
 }
 .content {
   width: 100%;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 0.5rem 0.5rem;
   overflow: hidden;
 }
 .content__element {
   width: 100%;
-  height: 228px;
-  padding: 28px 24px 24px 24px;
+  height: 22.8rem;
+  padding: 2.4rem 2.4rem 2.4rem 2.4rem;
   color: white;
   float: left;
+  position: relative;
+}
+.content__element > h2 {
+  font-weight: 700;
+  padding-bottom: 1.8rem;
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: white;
+}
+.content__price {
+  font-size: 3.2rem;
+  font-weight: 700;
+  float: left;
+}
+.content__priceDesc {
+  padding-bottom: 0.6rem;
+  padding-left: 1.2rem;
+  line-height: 4rem;
+  color: hsl(179, 60%, 60%);
+  float: left;
+}
+.content__desc_1 {
+  font-size: 1.5rem;
+  clear: left;
+}
+.content__button {
+  border-radius: 0.5rem;
+  background-color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  line-height: 4.8rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 2.4rem;
+  left: 2.4rem;
+  right: 2.4rem;
+}
+.content__button:hover {
+  background-color: hsl(71, 84%, 62%);
+  cursor: pointer;
+}
+.content__desc_2 {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
 }
 .content__element:first-child {
   background-color: hsl(179, 62%, 43%);
@@ -56,38 +111,29 @@ p {
 .content__element:last-child {
   background-color: hsl(179, 60%, 60%);
 }
-.content__element > h2 {
-  color: white;
-}
-.content__button {
-  width: 100%;
-  border-radius: 5px;
-  margin: auto;
-  background-color: hsl(71, 73%, 54%);
-  line-height: 48px;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  display: block;
-}
-.content__button:hover {
-  background-color: hsl(71, 84%, 62%);
-  cursor: pointer;
-}
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center;
   clear: left;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 635px) {
   #body {
-    width: 620px;
+    width: 63.5rem;
+  }
+  .header {
+    padding: 3.8rem 3.8rem 3.8rem 3.8rem;
   }
   .content__element {
     width: 50%;
+    padding: 3.8rem 3.8rem 3.8rem 3.8rem;
+  }
+  .content__button {
+    right: 3.8rem;
+    bottom: 3.8rem;
+    left: 3.8rem;
   }
 }
