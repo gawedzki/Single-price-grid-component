@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(204, 43%, 93%);
+}
+#body {
+  min-width: 310px;
+  width: 310px;
+  margin: auto;
+}
+.header {
+  width: 100%;
+  padding: 32px 24px 40px 24px;
+  border-radius: 5px 5px 0 0;
+  background-color: white;
+}
+h1 {
+  margin: 0;
+  color: hsl(179, 62%, 43%);
+  font-size: 0.875rem;
+}
+h2 {
+  margin: 0;
+  color: hsl(71, 73%, 54%);
+  font-size: 0.6875rem;
+}
+p {
+  margin: 0;
+  font-size: 0.625rem;
+}
+.header > p {
+  color: hsl(218, 22%, 67%);
+}
+.content {
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  overflow: hidden;
+}
+.content__element {
+  width: 100%;
+  height: 228px;
+  padding: 28px 24px 24px 24px;
+  color: white;
+  float: left;
+}
+.content__element:first-child {
+  background-color: hsl(179, 62%, 43%);
+}
+.content__element:last-child {
+  background-color: hsl(179, 60%, 60%);
+}
+.content__element > h2 {
+  color: white;
+}
+.content__button {
+  width: 100%;
+  border-radius: 5px;
+  margin: auto;
+  background-color: hsl(71, 73%, 54%);
+  line-height: 48px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.content__button:hover {
+  background-color: hsl(71, 84%, 62%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  clear: left;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (min-width: 620px) {
+  #body {
+    width: 620px;
+  }
+  .content__element {
+    width: 50%;
+  }
+}
