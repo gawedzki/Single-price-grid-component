@@ -60,7 +60,6 @@ p {
   position: relative;
 }
 .content__element > h2 {
-  font-weight: 700;
   padding-bottom: 1.8rem;
   margin: 0;
   font-size: 1.7rem;
@@ -111,7 +110,6 @@ p {
 .content__element:last-child {
   background-color: hsl(179, 60%, 60%);
 }
-
 .attribution {
   font-size: 1.1rem;
   text-align: center;
@@ -121,17 +119,44 @@ p {
   color: hsl(228, 45%, 44%);
 }
 @media only screen and (min-width: 635px) {
+  body {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   #body {
     width: 63.5rem;
   }
   .header {
-    padding: 3.8rem 3.8rem 3.8rem 3.8rem;
+    padding: 4rem 3.8rem 3.8rem 3.8rem;
+  }
+  .header > h1 {
+    padding-bottom: 3.2rem;
+    font-size: 2.4rem;
+  }
+  .header > h3 {
+    font-size: 1.8rem;
+  }
+  .header > p {
+    font-size: 1.6rem;
   }
   .content__element {
     width: 50%;
-    padding: 3.8rem 3.8rem 3.8rem 3.8rem;
+    height: 28rem;
+    padding: 4.8rem 3.8rem 3.8rem 3.8rem;
+  }
+  .content__element > h2 {
+    font-size: 1.9rem;
+  }
+  .content__priceDesc {
+    padding-bottom: 1rem;
+  }
+  .content__desc_1 {
+    font-size: 1.6rem;
   }
   .content__button {
+    line-height: 5.2rem;
     right: 3.8rem;
     bottom: 3.8rem;
     left: 3.8rem;
